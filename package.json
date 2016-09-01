@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "db:schema": "node ./utils/run_schema.js",
+    "db:seed": "node ./utils/run_seed.js"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
