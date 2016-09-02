@@ -4,7 +4,7 @@
 **URL**: https://servertrack.herokuapp.com/record  
 **Method**: PUT  
 **Data Params**: { server_name: [string], cpu_load : [double], ram_load : [double] }  
-**Response Codes**: Success (200 OK)
+**Response Codes**: Success (200 OK), Bad Request Error(400)
 
 **Title**: Display loads for a given server  
 **URL**: https://servertrack.herokuapp.com/average/:server_name  
@@ -21,5 +21,4 @@ JSON  will return:
 ### Build requirements:
 - install Node.js
 - run `npm install` in the project directory to install node_modules
-- make sure you have sqlite3 installed http://www.tutorialspoint.com/sqlite/sqlite_installation.htm
-- run `npm`
+- make sure you have sqlite3 installed

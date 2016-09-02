@@ -15,7 +15,11 @@ exports.serversController = {
     var data = JSON.parse(dataString);
     var timestamp = Date.now();
     db.record(data, timestamp, function(err, result){
-      res.status(200).json(result);
+      if (err != null) {
+        res.status(400).json("Bad Request Error")
+      } else {
+        res.status(200).json("Success");
+      }
     });
   },
 
