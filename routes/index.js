@@ -4,7 +4,15 @@ var servers = require('../controllers/servers');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'ServerTrack API',
+                        record: 'https://servertrack.herokuapp.com/record',
+                        average: 'https://servertrack.herokuapp.com/average/server_name',
+                        example: 'https://servertrack.herokuapp.com/example'});
+});
+
+/* GET home page. */
+router.get('/example', function(req, res, next) {
+  res.render('example', { title: 'JSON example'});
 });
 
 /* PUT new record into database (in-memory). */
