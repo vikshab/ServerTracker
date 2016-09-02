@@ -17,3 +17,9 @@ JSON  will return:
 - A list of the average load values for the last 24 hours broken down by hour
 
 [example](https://servertrack.herokuapp.com/example)
+
+### Build requirements:
+- install Node.js
+- run `npm install` in the project directory to install node_modules
+- make sure you have sqlite3 installed http://www.tutorialspoint.com/sqlite/sqlite_installation.htm
+- run `npm`
