@@ -5,9 +5,8 @@ var servers = require('../controllers/servers');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'ServerTrack API',
-                        record: 'https://servertrack.herokuapp.com/record',
-                        average: 'https://servertrack.herokuapp.com/average/server_name',
-                        example: 'https://servertrack.herokuapp.com/example'});
+                        record: '/record',
+                        average: '/:server_name'});
 });
 
 /* GET home page. */

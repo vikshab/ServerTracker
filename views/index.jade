@@ -2,6 +2,9 @@ extends layout
 
 block content
   h1= title
-  p To record load for a given server use #{record}
-  p Display loads for a given server use #{average}
-  p To see JSON example use #{example}
+  p Record load:
+  b #{record}
+  p Display loads:
+  b #{average}
+  p JSON:
+  p: #[a(href="https://servertrack.herokuapp.com/example") See example]
